@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div id="title">
+				<h1> Sample Add To Cart</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Your Cart</a></li>
+				</ul>
+			</nav>
+
+		</div>
+    </header>
+
+    <section>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Product </th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>Crew Neck Sweatshirt</td>
+                    <td>Abercrombie & Fitch</td>
+                    <td>$38</td>
+                    <td><button onclick="modal()">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Knitted Button Pullover</td>
+                    <td>Produkt</td>
+                    <td>$30</td>
+                    <td><button onclick="modal()">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Denim Jacket</td>
+                    <td>Ego</td>
+                    <td>$20</td>
+                    <td><button onclick="modal()">Add to Cart</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <div class="product_modal">
+        <div class="product_detail">
+            <span class="close">&times;</span>
+            <p>Sample Text</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
