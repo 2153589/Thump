@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Ride</title>
+</head>
+<body>
+    <form action="pre_order.php" method="post">
+        <div>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="">
+        </div>
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="">
+        </div>
+        <div>
+            <label for="mobile">Mobile</label>
+            <input type="text" name="mobile" id="" max="11">
+        </div>
+
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="">
+        </div>
+
+        <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="">
+        </div>
+
+        <div>
+            <label for ="date">Include Date of Testing</label>
+            <input type = "date" name = "date">
+        </div>
+
+        <div>
+            <label for="model">Model Interested to Test:</label>
+            <select name="model" id="">
+            <option value ="" selected >Choose Model</option>
+            <option value ="TSK50">TSK 50</option>
+            <option value ="TSK110">TSK 110</option>
+            <option value ="TSK70">TSK 70</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
