@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Warranty Validation</title>
+</head>
+<body>
+    <form class ="warranty_form" action = "waranty.php" method="POST">
+        <div>
+            <label for="ref_no">Reference Number</label>
+            <input type="text" name="ref_no" id="ref_no">
+        </div>
+        <div>
+            <label for="vin">VIN</label>
+            <input type="text" name="vin" id="vin">
+        </div>
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" >
+        </div>
+
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="tel_num">Telephone Number</label>
+            <input type="text" name="tel_num" id="tel_num">
+        </div>
+
+        <div>
+            <label for="cell_num">Cellphone Number</label>
+            <input type="text" name="cell_num" id="cell_num">
+        </div>
+
+        <div>
+            <label for ="address">Address</label>
+            <input type = "text" name = "address" id="address">
+        </div>
+
+        <div>
+            <label for ="date">Date of Sale</label>
+            <input type = "date" name = "date" id="date">
+        </div>
+
+        <div>
+            <label for ="country">Country</label>
+            <input type = "text" name = "country" id="country">
+        </div>
+
+        <div>
+            <label for ="model">Model</label>
+            <input type = "text" name = "model"  id = "model">
+        </div>
+
+        <div>
+            <label for ="ornum">Order Number</label>
+            <input type = "text" name = "ornum" id="ornum">
+        </div>
+
+        <!-- <div>
+            <label for = "receipt">Upload Receipt (Optional)</label>
+            <input type="file" name="receipt" id="receipt" >
+        </div> -->
+        <div>
+            <input type="submit" value="Submit">Submit</button>
+        </div>
+    </form>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function (){
+            $('.warranty_form').on('submit', function(e){
+                e.preventDefault();
+
+                let ref_num = $(this).find('#ref_num').val();
+                let vin = $(this).find('#vin').val();
+                let full_name = $(this).find('#name').val();
+                let email = $(this).find('#email').val();
+                let address = $(this).find('#address').val();
+                let tel_num = $(this).find('#tel_num').val();
+                let cel_num = $(this).find('#cell_num').val();
+                let date = $(this).find("#date").val();
+                let country = $(this).find('#country').val();
+                let model = $(this).find('#model').val();
+                let ornum = $(this).find('#ornum').val();
+                // let receipt = $(this).find('#receipt').val();
+
+                $.ajax({
+                    type:'POST',
+                    url:'waranty.php',
+                    data:{
+                            'ref_num': ref_num,
+                            'vin': vin,
+                            'fullname': full_name,
+                            'email': email,
+                            'address': address,
+                            'tel_num':tel_num,
+                            'cell_num':cell_num,
+                            'date':date,
+                            'country':country,
+                            'model': model,
+                            'ornum':ornum,
+                            // 'receipt':receipt
+                         },
+                    success: function(response){
+                        if(response.status == 100){
+                                alert(response.msg);
+                            }else if(response.status == 104){
+                                alert(response.msg);
+                            }
+                    }  
+                });
+            });
+        });    
+    </script> -->
+</body>
+</html>
